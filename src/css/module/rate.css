@@ -1,0 +1,75 @@
+.rate {
+  width: 100%;
+  max-width: 380px;
+  padding-top: 87px;
+}
+
+.rate__table {
+  background-color: #E4F2FF;
+  border-radius: 10px;
+  padding: 10px 14px 30px;
+  color: #265D77;
+}
+
+.rate__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'IBM Plex Sans';
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.rate__list {
+
+}
+
+.rate__item {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin-bottom: 22px;
+}
+
+.rate__item:last-child {
+  margin-bottom: 0;
+}
+
+.rate__currency {
+  margin-right: auto;
+}
+
+.rate__number {
+  margin-right: 5px;
+}
+
+.rate__arrow {
+  display: block;
+  content: '';
+  width: 9px;
+  height: 16px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 8px 4.5px;
+}
+
+.rate__arrow_up {
+  border-bottom-color: #0EFF0A;
+  transform: translateY(-25%);
+}
+
+.rate__arrow_down {
+  border-top-color: #F10000;
+  transform: translateY(25%);
+}
+
+@media (max-width: 1024px) {
+  .rate {
+    padding-top: 0;
+  }
+}

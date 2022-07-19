@@ -30,7 +30,7 @@
 .hero__signup-btn {
   padding: 11px 41px;
   background-color: #55C2FF;
-  border: 1px solid #55C2FF;
+  border: 2px solid transparent;
   border-radius: 8px;
   font-weight: 500;
   font-size: 1.4rem;
@@ -45,12 +45,10 @@
 
 .hero__signup-btn:active {
   background-color: #1C88EB;
-  border-color: #1C88EB;
 }
 
 .hero__signup-btn:disabled {
   background-color: #D7D7D7;
-  border-color: #D7D7D7;
 }
 
 @media (max-width: 1024px) {

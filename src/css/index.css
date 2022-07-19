@@ -6,3 +6,8 @@
 @import 'module/navigation.css';
 
 @import 'module/hero.css';
+
+@import 'module/main.css';
+@import 'module/about.css';
+@import 'module/options.css';
+@import 'module/rate.css';
