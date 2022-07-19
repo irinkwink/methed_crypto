@@ -43,7 +43,7 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <img src="src/img/logo.svg" alt="Логотип Crypto" class="header-logo logo">
+            <img class="header__logo logo" src="src/img/logo.svg" alt="Логотип Crypto" width="92" height="34">
             <button class="header__nav-btn" aria-label="">
                 <svg width="36" height="36" viewbox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.5 27H31.5V24H4.5V27ZM4.5 19.5H31.5V16.5H4.5V19.5ZM4.5 9V12H31.5V9H4.5Z"/>
@@ -61,7 +61,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main">
         <section class="hero">
             <div class="container">
                 <div class="hero__container">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="about" id="about">
+        <section class="main__section about" id="about">
             <div class="container about__container">
                 <div class="about__options options">
                     <h2 class="options__title title">Почему выбирают нас?</h2>
@@ -111,37 +111,82 @@
                             <li class="rate__item">
                                 <span class="rate__currency">RUB/AUD</span>
                                 <span class="rate__number">25.59</span>
-                                <span class="rate__arrow rate__arrow_up"></span>
+                                <span class="rate__arrow rate__arrow_up" aria-label="Растёт"></span>
                             </li>
                             <li class="rate__item">
                                 <span class="rate__currency">HKD/BYR</span>
                                 <span class="rate__number">27.76</span>
-                                <span class="rate__arrow rate__arrow_up"></span>
+                                <span class="rate__arrow rate__arrow_up" aria-label="Растёт"></span>
                             </li>
                             <li class="rate__item">
                                 <span class="rate__currency">AUD/CNH</span>
                                 <span class="rate__number">72.68</span>
-                                <span class="rate__arrow rate__arrow_down"></span>
+                                <span class="rate__arrow rate__arrow_down" aria-label="Падает"></span>
                             </li>
                             <li class="rate__item">
                                 <span class="rate__currency">JPY/GBP</span>
                                 <span class="rate__number">32.96</span>
-                                <span class="rate__arrow rate__arrow_up"></span>
+                                <span class="rate__arrow rate__arrow_up" aria-label="Растёт"></span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="faq" id="faq">
+        <section class="main__section faq" id="faq">
             <div class="container">
-
+                <h2 class="faq__title title">Частые вопросы</h2>
+                <ul class="faq__list">
+                    <li class="faq__item">
+                        <h3 class="faq__item-title">Как обменивать монеты?</h3>
+                        <p class="faq__item-description">Вы можете обменять любую поддерживаемую монету, следуя этим простым шагам</p>
+                        <button class="faq__btn" aria-label="Открыть карточку с ответом"></button>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__item-title">Как долго ждать обмен?</h3>
+                        <p class="faq__item-description">Каждая транзакция на Changelly проходит в три этапа. Обычно это занимает 5-30 минут. Если транзакция занимает больше времени, это может быть связано с несколькими факторами. Чтобы узнать причину задержки, необходимо определить на каком этапе она произошла. Пройдите на страницу История, найдите сделку, с которой возникли проблемы, и посмотрите ее статус.</p>
+                        <button class="faq__btn" aria-label="Открыть карточку с ответом"></button>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__item-title">Как пользоваться платформой?</h3>
+                        <p class="faq__item-description">После регистрации вам будет доступна база знаний Crypto, в которой вы сможете ознакомится с подробными инструкциями по работе с платформой</p>
+                        <button class="faq__btn" aria-label="Открыть карточку с ответом"></button>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__item-title">Как вывести деньги на карту?</h3>
+                        <p class="faq__item-description">Для того, чтобы вывести деньги на карту, необходимо прикрепить нужную карту к нашей платформе. Вывод денег доступен с 10:00 до 18:00 МСК в рабочие дни</p>
+                        <button class="faq__btn" aria-label="Закрыть карточку с ответом"></button>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
+            <div class="footer__container">
+                <a href="/" class="footer__logo-link">
+                    <img class="footer__logo logo" src="src/img/logo.svg" alt="Логотип Crypto" width="92" height="34">
+                </a>
+                <div class="footer__navigation footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="#about" class="footer__link">Почему выбирают нас?</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#faq" class="footer__link">Частые вопросы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="footer__copyright">
+                <p>© Crypto, 2022</p>
+                <a href="https://t.me/Mrshmallowww" class="footer__link">@Mrshmallowww</a>
+            </div>
+            
+
+
+            
         </div>
     </footer>
 </body>

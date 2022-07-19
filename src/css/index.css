@@ -8,6 +8,11 @@
 @import 'module/hero.css';
 
 @import 'module/main.css';
+
 @import 'module/about.css';
 @import 'module/options.css';
 @import 'module/rate.css';
+
+@import 'module/faq.css';
+
+@import 'module/footer.css';

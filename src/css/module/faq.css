@@ -1,0 +1,138 @@
+.faq {
+
+}
+
+.faq__title {
+
+}
+
+.faq__list {
+
+}
+
+.faq__item {
+  cursor: pointer;
+  position: relative;
+  padding: 18px 33px 0;
+  border: 2px solid #265D77;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.faq__item:last-child {
+  margin-bottom: 0;
+}
+
+.faq__item-title {
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 3.1rem;
+  margin-bottom: 16px;
+}
+
+/* .faq__item-title:hover {
+  color: #55C2FF;
+} */
+
+.faq__item-title_active {
+  font-weight: 500;
+  color: #55C2FF;
+} 
+
+.faq__item-description {
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  margin-bottom: 18px;
+  display: none;
+}
+
+.faq__item-description_active {
+  display: block;
+}
+
+.faq__btn {
+  position: absolute;
+  display: block;
+  top: 27px;
+  right: 24px;
+  content: '';
+  width: 22px;
+  height: 27px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 13.5px 11px;
+  border-top-color: #08475E;
+  border-bottom-color: transparent;
+}
+
+.faq__btn:focus {
+  outline: none;
+}
+
+.faq__btn:not(.faq__btn_active):hover,
+.faq__btn:not(.faq__btn_active):focus {
+  border-top-color: #55C2FF;
+}
+
+.faq__btn_active {
+  border-bottom-color: #55C2FF;
+  border-top-color: transparent;
+  top: 13.5px;
+}
+
+.faq__btn_active:hover,
+.faq__btn_active:focus {
+  border-bottom-color: #08475E;
+}
+
+@media (max-width: 768px) {
+  .faq__item-title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 22px;
+  }
+
+  .faq__item-description {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq__item {
+    padding: 10px 10px 0;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-bottom: 11px;
+  }
+
+  .faq__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .faq__item-title {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .faq__item-description {
+    margin-bottom: 10px;
+  }
+
+  .faq__btn {
+    top: 16px;
+    right: 11px;
+    width: 16px;
+    height: 18px;
+    border-width: 9px 8px;
+  }
+  
+  .faq__btn_active {
+    border-bottom-color: #55C2FF;
+    border-top-color: transparent;
+    top: 8px;
+  }
+
+}

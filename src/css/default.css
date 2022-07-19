@@ -50,9 +50,31 @@ h1, h2, h3, h4, p {
     padding: 0 30px;
 }
 
+.message {
+    position: relative;
+    padding: 0 10px;
+    z-index: 10;
+    background-color: #08475E;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Sans';
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: calc(780px + 60px);
+    }
+
+    .message {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
     }
 }
 
