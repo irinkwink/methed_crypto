@@ -28,6 +28,7 @@
   font-size: 2.6rem;
   line-height: 3.1rem;
   margin-bottom: 16px;
+  margin-right: 18px;
 }
 
 /* .faq__item-title:hover {
@@ -51,11 +52,19 @@
   display: block;
 }
 
+.faq__link {
+  color: #55C2FF;
+}
+
+.faq__link:hover {
+  color: #1C88EB;
+}
+
 .faq__btn {
   position: absolute;
   display: block;
   top: 27px;
-  right: 24px;
+  right: 23px;
   content: '';
   width: 22px;
   height: 27px;
@@ -123,7 +132,7 @@
 
   .faq__btn {
     top: 16px;
-    right: 11px;
+    right: 10px;
     width: 16px;
     height: 18px;
     border-width: 9px 8px;
