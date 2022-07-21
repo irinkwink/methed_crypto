@@ -15,12 +15,18 @@
 
 .header__nav-btn {
   display: none;
+  color: #000000;
 }
 
 @media (max-width: 768px) {
   .header__nav-btn {
     display: block;
+    z-index: 2;
     line-height: 0;
+  }
+
+  .header__nav-btn:hover {
+    color: #55C2FF;
   }
 
   .header__navigation {
@@ -34,7 +40,7 @@
   }
 
   .header__navigation_open {
-    transform: translateY(100%);
+    transform: translateY(calc(100% - 1px));
   }
 }
 

@@ -1,0 +1,117 @@
+.modal {
+  width: 90%;
+  max-width: 688px;
+  margin: 40px 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default;
+  text-align: left;
+  white-space: normal;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal_open {
+  visibility: visible;
+  opacity: 1;
+  transition: opasity 0.36s ease-in-out, visibility 0.36s ease-in-out;
+}
+
+.modal__container {
+  position: relative;
+  padding: 20px 20px 45px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.modal__title {
+  max-width: 400px;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  text-align: center;
+  margin: 0 auto 20px;
+  color: #55C2FF;
+}
+
+.modal__person {
+  display: flex;
+  margin: 0 auto 27px;
+  gap: 10px 16px;
+}
+
+.modal__label {
+  display: block;
+  flex-grow: 1;
+  font-family: 'IBM Plex Sans';
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #858585; 
+}
+
+.modal__input {
+  width: 100%;
+  display: block;
+  height: 36px;
+  padding: 10px;
+  margin-top: 2px;
+  background: #FFFFFF;
+  border: 1px solid #68B7FF;
+  border-radius: 8px;
+  font-family: 'IBM Plex Sans';
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.modal__order {
+  display: block;
+  width: 100%;
+  max-width: 232px;
+  margin: 0 auto;
+  padding: 11px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #FFFFFF;
+  background-color: #55C2FF;
+  border-radius: 8px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  color: #55C2FF;
+  line-height: 0;
+}
+
+
+@media (max-width: 540px) {
+  .modal__container {
+    padding: 20px 13px 36px;
+  }
+
+  .modal__title {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin-bottom: 10px;
+  }
+
+  .modal__person {
+    flex-direction: column;
+    max-width: 280px;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .modal__close {
+    top: -2px;
+    right: 0;
+    transform: translateY(-100%);
+  }
+}
